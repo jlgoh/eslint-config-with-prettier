@@ -1,6 +1,6 @@
 {
     "name": "@jlgoh/eslint-config-with-prettier",
-    "version": "1.0.0",
+    "version": "0.0.0-dev",
     "description": "@jlgoh's eslint and prettier configs!",
     "keywords": [
         "javascript",
