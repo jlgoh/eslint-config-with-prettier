@@ -19,7 +19,7 @@ module.exports = {
         ecmaVersion: 12,
         sourceType: 'module',
     },
-    plugins: ['react', 'react-hooks', '@typescript-eslint', 'jest'],
+    plugins: ['react', 'react-hooks', '@typescript-eslint', 'jest', 'prettier'],
     rules: {
         'no-use-before-define': 'off',
         '@typescript-eslint/no-use-before-define': ['error'],
@@ -64,6 +64,8 @@ module.exports = {
         'react/require-default-props': 'off',
         'react/sort-prop-types': 'error',
         'react-hooks/exhaustive-deps': 'warn',
+        // prettier rules
+        'prettier/prettier': 'error',
     },
     settings: {
         'import/resolver': {
