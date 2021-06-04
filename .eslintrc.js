@@ -10,6 +10,9 @@ module.exports = {
         'airbnb',
         'airbnb/hooks',
         'prettier',
+        'eslint:recommended',
+        'plugin:@typescript-eslint/eslint-recommended',
+        'plugin:@typescript-eslint/recommended',
     ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
@@ -43,7 +46,6 @@ module.exports = {
                 ],
             },
         ],
-        '@typescript-eslint/member-ordering': ['error', { default: { order: 'alphabetically' } }],
         'no-console': ['warn', { allow: ['warn', 'error', 'info'] }],
         // react rules
         'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
