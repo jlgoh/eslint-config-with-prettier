@@ -28,7 +28,7 @@ module.exports = {
         '@typescript-eslint/no-use-before-define': ['error'],
         'import/extensions': 'off',
         'import/order': [
-            'error',
+            'warn',
             {
                 alphabetize: {
                     order: 'asc',
@@ -54,9 +54,9 @@ module.exports = {
         'react/jsx-no-useless-fragment': 'error',
         'react/jsx-on-expression-per-line': 'off',
         'react/jsx-props-no-spreading': 'off',
-        'react/jsx-sort-default-props': 'error',
+        'react/jsx-sort-default-props': 'warn',
         'react/jsx-sort-props': [
-            'error',
+            'warn',
             {
                 reservedFirst: true,
                 shorthandLast: true,
@@ -64,7 +64,7 @@ module.exports = {
         ],
         'react/react-in-jsx-scope': 'off',
         'react/require-default-props': 'off',
-        'react/sort-prop-types': 'error',
+        'react/sort-prop-types': 'warn',
         'react-hooks/exhaustive-deps': 'warn',
         // prettier rules
         'prettier/prettier': 'error',
@@ -76,4 +76,12 @@ module.exports = {
             },
         },
     },
+    overrides: [
+        {
+            files: ['*.ts', '*.tsx'],
+            rules: {
+                'no-undef': 'off',
+            },
+        },
+    ],
 };
