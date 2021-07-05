@@ -67,7 +67,12 @@ module.exports = {
         'react/sort-prop-types': 'warn',
         'react-hooks/exhaustive-deps': 'warn',
         // prettier rules
-        'prettier/prettier': 'error',
+        'prettier/prettier': [
+            'error',
+            {
+                endOfLine: 'auto',
+            },
+        ],
     },
     settings: {
         'import/resolver': {
